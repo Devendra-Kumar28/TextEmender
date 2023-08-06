@@ -4,21 +4,21 @@ import PropTypes from 'prop-types'
 export default function Navbar(props) {
     return (
         <div>
-            <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
-                <div className="container-fluid" style={{ backgroundColor: props.mode === 'dark' ? '#050d0d' : '#198754', color: props.mode === 'dark' ? 'white' : 'black' }}>
-                   <img src="DEVD.png" class="d-inline-block align-text-top" alt="" height= "30px" width="30px"/>
+            <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`} style={{ paddingTop: '0rem', paddingBottom: '0rem', border: '3rem' }} >
+                <div className="container-fluid" style={{ backgroundColor: props.mode === 'dark' ? '#011414' : '#0e6837', color: props.mode === 'dark' ? 'white' : 'black' }}>
+                   <img src="TLogo.png" class="d-inline-block align-text-top" alt="" height= "30px" width="30px"/>
 
-                  <a className="navbar-brand" href="/"> <b>{props.title}</b></a>
+                  <a className="navbar-brand" href="/"  style={{ marginLeft: '10px' ,fontWeight: 'bold'}} > <b>{props.title}</b></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">| Home</a>
+                                <a className="nav-link active" aria-current="page" href="/" style={{  fontWeight: 'bold' }}>| Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" href="/">{props.about}</a>
+                                <a className="nav-link active" href="/" style={{  fontWeight: 'bold' }}>{props.about}</a>
                             </li>
                         </ul>
                         {/* <form className="d-flex">
@@ -27,7 +27,7 @@ export default function Navbar(props) {
                         </form>*/}
                         <div className={`form-check form-switch text-${props.mode === 'light' ? 'dark' : 'light'}`}>
                             <input className="form-check-input" onClick = {props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                            <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Dark Mode</label>
+                            <label className="form-check-label" htmlFor="flexSwitchCheckDefault" style={{   fontWeight: 'bold' }}>Change Mode</label>
                         </div>
                     </div>
                 </div>

@@ -36,15 +36,15 @@ export default function TextForm(props) {
         <>
             <div className="container" style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>
                 <div className="mb-3">
-                    <h6>{props.heading}</h6>
-                    <textarea className="form-control" value={text} onChange={handleOnChange} style={{ backgroundColor: props.mode === 'dark' ? '#466e6e' : '#E1F8DC', color: props.mode === 'dark' ? 'white' : 'black' }} id="mybox" rows="8"></textarea>
+                    <h6 className= " text-center" >{props.heading}</h6>
+                    <textarea placeholder= " Please enter your text here! " className="form-control" value={text} onChange={handleOnChange} style={{ backgroundColor: props.mode === 'dark' ? '#203333' : '#E1F8DC', color: props.mode === 'dark' ? 'white' : 'black' }} id="mybox" rows="8"></textarea>
                 </div>
-                <button type="button" className="btn btn-outline-danger mx-2 my-1" onClick={handleUpClick}>UPPER CASE</button>
-                <button type="button" className="btn btn-outline-danger mx-2 my-1" onClick={handleLoClick}>lower case</button>
-                <button type="button" className="btn btn-outline-danger mx-2 my-1" onClick={handleFirstLetterUppercase}>Title Case</button>
-                <button type="button" className="btn btn-outline-danger mx-2 my-1" onClick={handleExtraSpaces}>Remove Spaces</button>
-                <button type="button" className="btn btn-outline-danger mx-2 my-1" onClick={handleCopy}>Copy Text</button>
-                <button type="button" className="btn btn-outline-danger mx-2 my-1" onClick={handleClear}>Clear Text</button>
+                <button type="button" className="btn btn-dark mx-2 my-1" onClick={handleUpClick}>UPPER CASE</button>
+                <button type="button" className="btn btn-dark mx-2 my-1" onClick={handleLoClick}>lower case</button>
+                <button type="button" className="btn btn-dark mx-2 my-1" onClick={handleFirstLetterUppercase}>Title Case</button>
+                <button type="button" className="btn btn-dark mx-2 my-1" onClick={handleExtraSpaces}>Remove Spaces</button>
+                <button type="button" className="btn btn-dark mx-2 my-1" onClick={handleCopy}>Copy Text</button>
+                <button type="button" className="btn btn-dark mx-2 my-1" onClick={handleClear}>Clear Text</button>
             </div >
             <div className="container" style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>
                 <div className="mb-3 my-2" style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>
