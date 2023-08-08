@@ -35,7 +35,7 @@ function App() {
 
   return (
     <>
-      <Navbar title="TextEmender" about=" | About" mode={mode} toggleMode={toggleMode} />
+      <Navbar title="TextEmender"  about=" | About" mode={mode} toggleMode={toggleMode} />
       <div className="container my-3">
         <TextForm heading="Welcome to TextEmender!" mode={mode} />
       </div>
